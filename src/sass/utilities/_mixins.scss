@@ -1,0 +1,17 @@
+@mixin heroImg($img) {
+    position: relative;
+    background-image: url($img);
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+}
+
+@mixin shadowImg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0000009c;
+    z-index: -1;
+}
