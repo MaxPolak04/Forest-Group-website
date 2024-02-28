@@ -168,6 +168,10 @@ body {
 	&__text {
 		margin-bottom: 1em;
 		text-align: center;
+
+		&--two {
+			margin: 1.5em 0 2.5em;
+		}
 	}
 
 	&__boxes {
@@ -182,7 +186,7 @@ body {
 		margin: 1em;
 		padding: 1.5em 2em;
 		border-radius: 5px;
-		box-shadow: 0 0 10px $boxShadow;
+		box-shadow: 0 0 10px $box-shadow;
 		text-align: center;
 
 		&-heading {
@@ -223,12 +227,38 @@ body {
 			margin-top: 1em;
 			color: $dark;
 			@include button;
+			transition: background-color .3s, transform .3s;
+
+			&:hover {
+				background-color: $light-white;
+				transform: scale(.99);
+			}
 
 			&--green {
 				box-shadow: 0 2px 5px $green;
 				background-color: $green;
 				color: $black;
+				transition: background-color .3s, background-color .3s, color .3s;
+
+				&:hover {
+					box-shadow: 0 2px 5px $dark-green;
+					background-color: $dark-green;
+					color: $white;
+				}
 			}
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $green;
+		
+		&:link {
+			color: $green;
+		}
+
+		&:visited {
+			color: $dark-green;
 		}
 	}
 }
