@@ -161,3 +161,155 @@ body {
 		color: $white;
 	}
 }
+
+// offer
+
+.offer {
+	&__text {
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__box {
+		width: 80%;
+		margin: 1em;
+		padding: 1.5em 2em;
+		border-radius: 5px;
+		box-shadow: 0 0 10px $boxShadow;
+		text-align: center;
+
+		&-heading {
+			font-size: 2rem;
+			font-weight: normal;
+		}
+
+		&-price {
+			margin: .5em 0;
+			font-size: 3rem;
+			font-weight: bold;
+		}
+
+		&-option {
+			text-align: start;
+			margin: 0.3em 0;
+
+			
+			&--gray {
+				opacity: .5;
+			}
+			
+			.fa-solid {
+				margin-right: 1em;
+				font-size: 1rem;
+			}
+
+			.fa-check {
+				color: $green;
+			}
+
+			.fa-minus {
+				color: $dark;
+			}
+		}
+
+		&-btn {
+			margin-top: 1em;
+			color: $dark;
+			@include button;
+
+			&--green {
+				box-shadow: 0 2px 5px $green;
+				background-color: $green;
+				color: $black;
+			}
+		}
+	}
+}
+
+// footer
+
+.footer {
+	background-color: $light-white;
+
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
+	&__box {
+		padding: 0 1em;
+
+		&--one {
+			padding-top: 1.5em;
+		}
+
+		&--two {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+		}
+	}
+
+	&__brand {
+		text-decoration: none;
+		font-size: 3.2rem;
+		color: $black;
+
+		.fa-tree {
+			color: $dark;
+			margin: 0.25em;
+			margin-right: 0.05em;
+			margin-left: .75em;
+		}
+	}
+
+	&__aboutus {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		margin: 1em;
+	}
+
+	&__company {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		margin: 1em;
+	}
+
+	&__docs {
+		grid-column: 1/2;
+		grid-row: 3/4;
+		margin: 1em;
+	}
+
+	&__heading {
+		margin-bottom: .8em;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	&__text {
+		display: block;
+		margin-bottom: 1em;
+		text-decoration: none;
+		font-size: 1rem;
+		color: $dark;
+		opacity: 0.7;
+	}
+
+	&__copyrights {
+		margin: 2em;
+		text-align: center;
+		font-size: 1rem;
+		color: $dark;
+		opacity: 0.7;
+	}
+}

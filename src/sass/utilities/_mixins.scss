@@ -1,3 +1,5 @@
+@use './colors' as *;
+
 @mixin heroImg($img) {
     position: relative;
     background-image: url($img);
@@ -12,6 +14,16 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #0000009c;
+    background-color: $shadow;
     z-index: -1;
+}
+
+@mixin button {
+    width: 100%;
+    padding: 0.5em 1em;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px $boxShadow;
+    cursor: pointer;
 }
