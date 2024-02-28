@@ -1,47 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Forest Group</title>
-
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-			rel="stylesheet"
-		/>
-
-		<link rel="stylesheet" href="../dist/css/style.min.css" />
-
-		<script
-			src="https://kit.fontawesome.com/c012b0748e.js"
-			crossorigin="anonymous"
-		></script>
+		<!-- @include 'head.kit' -->
 	</head>
 	<body>
-		<nav class="nav">
-			<div class="wrapper">
-				<a href="#" class="nav__brand">
-					<i class="fa-solid fa-tree"></i>Forest
-				</a>
-				<button class="nav__btn">
-					<i class="fa-solid fa-bars"></i>
-				</button>
-				<div class="nav__mobile">
-					<a href="#" class="nav__mobile-link">Home</a>
-					<a href="#aboutus" class="nav__mobile-link">O nas</a>
-					<a href="#offer" class="nav__mobile-link">Oferta</a>
-					<a href="#contact" class="nav__mobile-link">Kontakt</a>
-				</div>
-				<div class="nav__desktop">
-					<a href="#" class="nav__mobile-link">Home</a>
-					<a href="#aboutus" class="nav__mobile-link">O nas</a>
-					<a href="#offer" class="nav__mobile-link">Oferta</a>
-					<a href="#contact" class="nav__mobile-link">Kontakt</a>
-				</div>
-			</div>
-		</nav>
+		<!-- @include 'nav.kit' -->
 
 		<header id="home" class="header hero-img">
 			<div class="hero-img__shadow"></div>
@@ -157,41 +120,6 @@
 			</section>
 		</main>
 
-		<footer class="footer">
-			<div class="wrapper">
-				<div class="footer__boxes">
-					<div class="footer__box footer__box--one">
-						<a href="#" class="footer__brand">
-							<i class="fa-solid fa-tree"></i>Forest
-						</a>
-					</div>
-					<div class="footer__box footer__box--two">
-						<div class="footer__aboutus">
-							<h6 class="footer__heading">O nas</h6>
-							<a href="#" class="footer__text">Historia</a>
-							<a href="#" class="footer__text">Parki</a>
-							<a href="#" class="footer__text">Opinie</a>
-						</div>
-						<div class="footer__company">
-							<h6 class="footer__heading">Nasza Firma</h6>
-							<a href="#" class="footer__text">Praca</a>
-							<a href="#" class="footer__text">Kadry</a>
-							<a href="#" class="footer__text">Zarząd</a>
-						</div>
-						<div class="footer__docs">
-							<h6 class="footer__heading">Dokumenty</h6>
-							<a href="#" class="footer__text">Wnioski</a>
-							<a href="#" class="footer__text">Rezerwacje</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr />
-			<p class="footer__copyrights">
-				&copy;<span class="footer__year"></span> Forest Group Company Ltd.
-			</p>
-		</footer>
-
-		<script src="../dist/js/script.min.js"></script>
+		<!-- @include 'footer.kit' -->
 	</body>
 </html>
