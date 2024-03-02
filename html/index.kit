@@ -3,7 +3,7 @@
 	<head>
 		<!-- @include 'head.kit' -->
 	</head>
-	<body>
+	<body data-bs-spy="scroll" data-bs-target="#nav">
 		<!-- @include 'nav.kit' -->
 		
 		<header id="home" class="header hero-img">
@@ -55,41 +55,45 @@
 						<div class="offer__box">
 							<h5 class="offer__box-heading">Demo</h5>
 							<p class="offer__box-price">$0</p>
-							<p class="offer__box-option">
-								<i class="fa-solid fa-check"></i>opcja w pakiecie
-							</p>
-							<p class="offer__box-option">
-								<i class="fa-solid fa-check"></i>opcja w pakiecie
-							</p>
-							<p class="offer__box-option offer__box-option--gray">
-								<i class="fa-solid fa-minus"></i>opcja poza pakietem
-							</p>
-							<p class="offer__box-option offer__box-option--gray">
-								<i class="fa-solid fa-minus"></i>opcja poza pakietem
-							</p>
-							<p class="offer__box-option offer__box-option--gray">
-								<i class="fa-solid fa-minus"></i>opcja poza pakietem
-							</p>
+							<div class="offer__box-content">
+								<p class="offer__box-option">
+									<i class="fa-solid fa-check"></i>opcja w pakiecie
+								</p>
+								<p class="offer__box-option">
+									<i class="fa-solid fa-check"></i>opcja w pakiecie
+								</p>
+								<p class="offer__box-option offer__box-option--gray">
+									<i class="fa-solid fa-minus"></i>opcja poza pakietem
+								</p>
+								<p class="offer__box-option offer__box-option--gray">
+									<i class="fa-solid fa-minus"></i>opcja poza pakietem
+								</p>
+								<p class="offer__box-option offer__box-option--gray">
+									<i class="fa-solid fa-minus"></i>opcja poza pakietem
+								</p>
+							</div>
 							<button class="offer__box-btn">Wybierz</button>
 						</div>
-						<div class="offer__box">
+						<div class="offer__box offer__box--two">
 							<h5 class="offer__box-heading">Standard</h5>
 							<p class="offer__box-price">$99</p>
-							<p class="offer__box-option">
-								<i class="fa-solid fa-check"></i>opcja w pakiecie
-							</p>
-							<p class="offer__box-option">
-								<i class="fa-solid fa-check"></i>opcja w pakiecie
-							</p>
-							<p class="offer__box-option">
-								<i class="fa-solid fa-check"></i>opcja w pakiecie
-							</p>
-							<p class="offer__box-option offer__box-option--gray">
-								<i class="fa-solid fa-minus"></i>opcja poza pakietem
-							</p>
-							<p class="offer__box-option offer__box-option--gray">
-								<i class="fa-solid fa-minus"></i>opcja poza pakietem
-							</p>
+							<div class="offer__box-content">
+								<p class="offer__box-option">
+									<i class="fa-solid fa-check"></i>opcja w pakiecie
+								</p>
+								<p class="offer__box-option">
+									<i class="fa-solid fa-check"></i>opcja w pakiecie
+								</p>
+								<p class="offer__box-option">
+									<i class="fa-solid fa-check"></i>opcja w pakiecie
+								</p>
+								<p class="offer__box-option offer__box-option--gray">
+									<i class="fa-solid fa-minus"></i>opcja poza pakietem
+								</p>
+								<p class="offer__box-option offer__box-option--gray">
+									<i class="fa-solid fa-minus"></i>opcja poza pakietem
+								</p>
+							</div>
 							<button class="offer__box-btn offer__box-btn--green">
 								Wybierz
 							</button>
@@ -97,25 +101,27 @@
 						<div class="offer__box">
 							<h5 class="offer__box-heading">Premium</h5>
 							<p class="offer__box-price">$299</p>
-							<p class="offer__box-option">
-								<i class="fa-solid fa-check"></i>opcja w pakiecie
-							</p>
-							<p class="offer__box-option">
-								<i class="fa-solid fa-check"></i>opcja w pakiecie
-							</p>
-							<p class="offer__box-option">
-								<i class="fa-solid fa-check"></i>opcja w pakiecie
-							</p>
-							<p class="offer__box-option">
-								<i class="fa-solid fa-check"></i>opcja w pakiecie
-							</p>
-							<p class="offer__box-option">
-								<i class="fa-solid fa-check"></i>opcja w pakiecie
-							</p>
+							<div class="offer__box-content">
+								<p class="offer__box-option">
+									<i class="fa-solid fa-check"></i>opcja w pakiecie
+								</p>
+								<p class="offer__box-option">
+									<i class="fa-solid fa-check"></i>opcja w pakiecie
+								</p>
+								<p class="offer__box-option">
+									<i class="fa-solid fa-check"></i>opcja w pakiecie
+								</p>
+								<p class="offer__box-option">
+									<i class="fa-solid fa-check"></i>opcja w pakiecie
+								</p>
+								<p class="offer__box-option">
+									<i class="fa-solid fa-check"></i>opcja w pakiecie
+								</p>
+							</div>
 							<button class="offer__box-btn">Wybierz</button>
 						</div>
 					</div>
-					<p class="offer__text offer__text--two">Zobacz nasze pozostałe oferty <a href="offer.html" class="offer__link">tutaj</a></p>
+					<p class="offer__text offer__text--two">Zobacz nasze pozostałe oferty <a href="offer.html" class="offer__link">tutaj</a>.</p>
 				</div>
 			</section>
 		</main>
