@@ -21,7 +21,7 @@
     crossorigin="anonymous"
 ></script>
 	</head>
-	<body data-bs-spy="scroll" data-bs-target="#nav">
+	<body data-bs-spy="scroll" data-bs-target="#nav-desktop">
 		<nav class="nav">
     <div class="navbar">
         <div class="wrapper">
@@ -33,28 +33,31 @@
             </button>
         </div>
     </div>
-    <nav id="nav" class="nav__mobile">
+    <nav class="nav__mobile">
         <button class="nav__btn nav__btn-x"><i class="fa-solid fa-xmark"></i></button>
-        <a href="#" class="nav__mobile-link active">Home</a>
+        <a href="#" class="nav__mobile-link">Home</a>
         <a href="#aboutus" class="nav__mobile-link">O nas</a>
         <a href="#offer" class="nav__mobile-link">Oferta</a>
         <a href="contact.html" class="nav__mobile-link">Kontakt</a>
     </nav>
-    <nav class="nav__desktop">
-        <a href="#" class="nav__mobile-link active">Home</a>
-        <a href="#aboutus" class="nav__mobile-link">O nas</a>
-        <a href="#offer" class="nav__mobile-link">Oferta</a>
-        <a href="contact.html" class="nav__mobile-link">Kontakt</a>
+    <nav id="nav-desktop" class="nav__desktop">
+        <a href="#" class="nav__brand">
+            <i class="fa-solid fa-tree"></i>Forest
+        </a>
+        <div class="nav__desktop-box">
+            <a href="#" class="nav__desktop-link active">Home</a>
+            <a href="#aboutus" class="nav__desktop-link">O nas</a>
+            <a href="#offer" class="nav__desktop-link">Oferta</a>
+            <a href="contact.html" class="nav__desktop-link">Kontakt</a>
+        </div>
     </nav>
 </nav>
 		
 		<header id="home" class="header hero-img">
 			<div class="hero-img__shadow"></div>
-			<div class="wrapper">
-				<div class="hero-img__content">
-					<h1 class="hero-img__header">Forest Group</h1>
-					<p class="hero-img__text">Najpiękniejszy park w Twojej okolicy!</p>
-				</div>
+			<div class="hero-img__content">
+				<h1 class="hero-img__header">Forest Group</h1>
+				<p class="hero-img__text">Najpiękniejszy park w Twojej okolicy!</p>
 			</div>
 		</header>
 
