@@ -1,0 +1,41 @@
+@use './colors' as *;
+@use './mixins' as *;
+
+.hero-img-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	@include heroImg("../../dist/img/hero-img-small-02.jpg");
+
+	&__shadow {
+		@include shadowImg;
+	}
+
+	&__text {
+		width: 70%;
+		margin: 0 auto;
+		padding: 1em 3em;
+		border: 1px solid $white;
+		text-align: center;
+		color: $white;
+	}
+}
+
+@media (min-width: 768px) {
+    .hero-img-section {
+		&__text {
+			font-size: 3rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+    .hero-img-section {
+		@include heroImg("../../dist/img/hero-img-big-02.jpg");
+
+		&__text {
+			font-size: 4rem;
+		}
+	}
+}

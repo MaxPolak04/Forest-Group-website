@@ -6,7 +6,28 @@
 <body>
     <!-- @include 'nav.kit' -->
     
-
+    <main>
+        <section class="contact section">
+            <h3 class="section__heading">Kontakt</h3>
+				<div class="wrapper">
+                    <form class="contact__form">
+                        <div class="contact__form-box">
+                            <label for="name" class="contact__form-label">Imię</label>
+                            <input type="text" id="name" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-box">
+                            <label for="email" class="contact__form-label">E-mail</label>
+                            <input type="email" id="email" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-box">
+                            <label for="msg" class="contact__form-label">Wiadomość</label>
+                            <textarea id="msg" class="contact__form-textarea" cols="30" rows="10"></textarea>
+                        </div>
+                        <button class="contact__form-btn">Wyślij</button>
+                    </form>
+                </div>
+        </section>
+    </main>
 
     <!-- @include 'footer.kit' -->
 </body>
