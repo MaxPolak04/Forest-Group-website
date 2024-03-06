@@ -1,7 +1,7 @@
-@use './colors' as *;
+@use "./colors" as *;
 
 @mixin nav {
-    position: fixed;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -9,29 +9,44 @@
 }
 
 @mixin heroImg($img) {
-    position: relative;
-    background-image: url($img);
+	position: relative;
+	background-image: url($img);
 	background-position: center;
 	background-size: cover;
 	z-index: 0;
 }
 
 @mixin shadowImg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: $shadow;
-    z-index: -1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $shadow;
+	z-index: -1;
 }
 
 @mixin button {
-    width: 100%;
-    padding: 0.5em 1em;
-    background: none;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px $box-shadow;
-    cursor: pointer;
+	width: 100%;
+	padding: 0.5em 1em;
+	background: none;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px $box-shadow;
+	cursor: pointer;
+}
+
+@mixin input {
+	padding: 0.5em 1em;
+	width: 100%;
+	border: 1px solid $black;
+	border-radius: 5px;
+	background: none;
+	color: $black;
+	transition: border 0.3s;
+
+    &:focus {
+        outline: none;
+        border: 1px solid $green;
+    }
 }
