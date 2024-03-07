@@ -4,6 +4,11 @@ const xBtn = document.querySelector('.nav__btn-x')
 const navMobile = document.querySelector('.nav__mobile')
 const navLinks = document.querySelectorAll('.nav__mobile-link')
 
+// const name = document.querySelector('#name')
+// const email = document.querySelector('#email')
+// const msg = document.querySelector('#msg')
+// const sendBtn = document.querySelector('.contact__form-btn')
+
 const handleNav = () => {
     navMobile.classList.toggle('nav__mobile--active')
 
@@ -14,11 +19,20 @@ const handleNav = () => {
     })
 }
 
+// const name = (params) => {
+    
+// }
+
 const handleCurrentYear = () => {
     const year = new Date().getFullYear()
     footerYear.innerText = year
 }
 
 handleCurrentYear()
+
 burgerBtn.addEventListener('click', handleNav)
 xBtn.addEventListener('click', handleNav)
+
+// sendBtn.addEventListener('click', e => {
+//     e.preventDefault()
+// })
