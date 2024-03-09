@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /Forest_Website.pdf
+Disallow: /README.md
+Disallow: /.gitignore
+Sitemap:
